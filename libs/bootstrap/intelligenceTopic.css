@@ -1,0 +1,238 @@
+
+.intelligence-banner img {
+
+    width: 100%;
+    vertical-align: middle;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+
+}.intelligence-info{
+  width: 100%;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.intelligence-info .container_bulid{
+  width: 1200px!important;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.intelligence-info .container_bulid .topic{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+.intelligence-info .container_bulid .topic .line{
+  width:4px;
+  height: 36px;
+  background: #bce9ff;
+  display: inline-block;
+  float: left;
+
+}
+.intelligence-info .container_bulid .topic .text{
+  font-size: 36px;
+  color: #1c5fba;
+  display: inline-block;
+  margin: 0px 10px;
+  float: left;
+  height: 36px;
+  line-height: 36px;
+
+
+}
+.intelligence-info .container_bulid  .info_{
+  width: 95%  ;
+  overflow: hidden;
+}
+.intelligence-info .container_bulid  .info_ .more{
+  background: url(../image/intelligence_btn.png) no-repeat;
+  width: 150px;
+  height: 40px;
+  margin: auto;
+  text-align: center;
+  display: block;
+  color: #1c5fba;
+  font-size: 16px;
+}
+.intelligence-info .container_bulid .img-info{
+  margin-top: 30px;
+
+}
+
+
+.intelligence-info .container_bulid .img-info img{
+  width: 100%;
+  vertical-align: middle;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+.intelligence-info .container_bulid .text-title{
+  text-align: center;
+  margin: 20px 0 ;
+  font-size:28px ;
+  color: #000000;
+}
+.intelligence-time{
+  background: url(../image/intelligence_02.png) no-repeat;
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.intelligence-time .container_bulid{
+  width: 1200px;
+  margin: auto;
+
+
+}
+.intelligence-time .container_bulid h1{
+  margin-left: 30px;
+  font-size: 36px;
+  color: #1c5fba;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.intelligence-time .container_bulid .info{
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 70px;
+}
+.intelligence-time .container_bulid .info h2{
+  width: 200px;
+  background:#1c5fba ;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-size: 18px;
+  border-radius: 10px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+
+}
+.intelligence-time .container_bulid .info .info-01{
+  color: #000000;
+  font-size: 14px;
+
+  text-align: center;
+  display: block;
+}
+
+
+
+
+.info-msg .cooInt-msg {
+  background: #fff;
+  width:80%;
+
+  margin:50px auto ;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+
+.info-msg {
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  display: none;
+  p{
+    margin-top: 10px;
+  }
+}
+.cooInt-msg dl{
+  max-height: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.info-msg .cooInt-msg .title {
+  font-size: 22px;
+  border-bottom: 1px solid #d9d9d9;
+  margin: 0 15px 20px 15px;
+  line-height: 40px;
+  height: 40px;
+  padding: 10px 0;
+  box-sizing: content-box;
+}
+
+.info-msg .cooInt-msg .title a {
+  display: inline-block;
+  float: right;
+  width: 40px;
+  height: 40px;
+}
+
+.info-msg .cooInt-msg .title a b {
+  display: block;
+  background: url("../image/solCon_closeIcon.png") no-repeat 0 0;
+  width: 14px;
+  height: 14px;
+  margin: 15px 0 0 25px;
+}
+
+.info-msg .cooInt-msg .title a b:hover {
+  //background-position: -20px 0;
+}
+.info-msg .info_{
+  width: 90%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+@media (max-width: 768px) {
+  .intelligence-info .container_bulid{
+    width: 100%!important;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .intelligence-info .container_bulid .info_{
+    width: 90%!important;
+    margin: auto;
+
+  }
+  .intelligence-info .container_bulid .topic{
+
+    margin:30px 30px;
+    text-align: center!important;
+    display: inline-block;
+
+  }
+  .intelligence-time .container_bulid{
+    width: 100%;
+    margin: auto;
+
+  }
+
+  .info_p1,.info_p2{
+    display: none!important;
+  }
+  .more{
+  display: none!important;}
+  .intelligence-info .container_bulid .topic .line{
+    width:4px;
+    height: 30px;
+    background: #bce9ff;
+    display: inline-block;
+    float: left;
+
+  }
+  .intelligence-info .container_bulid .topic .text{
+    font-size: 30px;
+    color: #1c5fba;
+    display: inline-block;
+    margin: 0px 10px;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+
+
+  }
+}

@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #EAEFF2;
+  color: #333;
+  font-size: 0.28rem;
+}
+body ul,
+body li {
+  list-style: none;
+}
+body ul.lab_common_UL {
+  width: 7rem;
+  margin: 0 auto;
+  padding: 0.1rem 0.2rem;
+  box-sizing: border-box;
+  margin-top: 0.2rem;
+  border-radius: 0.06rem;
+  background: white;
+}
+body ul.lab_common_UL > li {
+  background: white;
+  box-sizing: border-box;
+  border-bottom: 0.02rem dotted #EAEFF2;
+  padding-bottom: 0.2rem;
+  padding-top: 0.2rem;
+}
+body ul.lab_common_UL > li h2 {
+  font-size: 0.28rem;
+  line-height: 0.48rem;
+  color: #18BBFC;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+body ul.lab_common_UL > li h2 img {
+  width: 0.26rem;
+  height: 0.26rem;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  margin-right: 0.1rem;
+}
+body ul.lab_common_UL > li p {
+  font-size: 0.28rem;
+  line-height: 0.56rem;
+  color: #333;
+  text-indent: 2em;
+}
+body ul.lab_common_UL > li h6 {
+  font-size: 0.28rem;
+  line-height: 0.4rem;
+  color: #333;
+  font-weight: normal;
+  padding-left: 0.5rem;
+  line-height: 0.4rem;
+  background: url(img/yuandian.png) no-repeat 0.2rem center;
+  background-size: 0.1rem 0.1rem;
+}
+body ul.lab_common_UL li:last-child {
+  border-bottom: 0;
+}
+
+body {
+  font-size: 14px;
+}
+body .center_1000 {
+  width: 1000px;
+  margin: 0 auto;
+  background: white;
+  margin-bottom: 50px;
+}
+body .center_1000 .top {
+  height: 104px;
+}
+body .center_1000 .logoDIV {
+  background: #2360bc;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+body .center_1000 .form {
+  padding: 20px 44px;
+  box-sizing: border-box;
+}
+body .center_1000 .form .enterprise {
+  height: 40px;
+  background: white;
+  overflow: hidden;
+  border-bottom: 1px solid #5BBBFF;
+}
+body .center_1000 .form .enterprise .enterprise_left {
+  float: left;
+  height: 100%;
+  border-bottom: 2px solid #5BBBFF;
+}
+body .center_1000 .form .enterprise .enterprise_left .enterprise_left_logo {
+  float: left;
+  width: 18px;
+  height: 18px;
+  background: url(img/PCicon.png) no-repeat center top;
+  margin-top: 10px;
+  margin-right: 6px;
+}
+body .center_1000 .form .enterprise .enterprise_left .enterprise_left_logo_people {
+  background: url(img/PCicon.png) no-repeat center -18px;
+}
+body .center_1000 .form .enterprise .enterprise_left .tex {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  color: #5BBBFF;
+  font-size: 16px;
+  font-weight: bold;
+}
+body .center_1000 .form #gray {
+  background: #F8F8F8;
+  overflow: hidden;
+}
+body .center_1000 .form #gray .form_group {
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 18px;
+  margin-top: 18px;
+}
+body .center_1000 .form #gray .form_group .info {
+  width: 75%;
+  margin: 0 auto;
+}
+body .center_1000 .form #gray .form_group .info .info_left {
+  width: 250px;
+  text-align: right;
+  float: left;
+}
+body .center_1000 .form #gray .form_group .info .info_left .xing {
+  color: red;
+}
+body .center_1000 .form #gray .form_group .info .bu {
+  margin-top: 214px;
+}
+body .center_1000 .form #gray .form_group .info input[type=text],
+body .center_1000 .form #gray .form_group .info input[type=number],
+body .center_1000 .form #gray .form_group .info input[type=email] {
+  float: right;
+  width: 390px;
+  height: 30px;
+}
+body .center_1000 .form #gray .form_group .info textarea {
+  resize: none;
+  float: right;
+  width: 390px;
+  height: 80px;
+}
+body .center_1000 .form #gray .enterpriseIntroduction,
+body .center_1000 .form #gray .enterpriseProduct {
+  height: 80px;
+}
+body .center_1000 .form #gray #filed {
+  height: 234px;
+}
+body .center_1000 .form #gray #filed div.executiveCommittee {
+  height: auto;
+}
+body .center_1000 .form #gray #dingwei {
+  height: 185px;
+}
+body .center_1000 .form #gray #dingwei div.executiveCommittee {
+  height: auto;
+}
+body .center_1000 .form #gray #dingwei b {
+  width: 190px;
+}
+body .center_1000 .form #gray #tech {
+  height: 90px;
+}
+body .center_1000 .form #gray #tech div.executiveCommittee {
+  height: auto;
+}
+body .center_1000 .form #gray #tech b {
+  width: 125px;
+}
+body .center_1000 .form #gray #yunying {
+  height: 87px;
+}
+body .center_1000 .form #gray #yunying div.executiveCommittee {
+  height: auto;
+}
+body .center_1000 .form #gray #yunying b {
+  width: 154px;
+}
+body .center_1000 .form #gray #getwhat {
+  height: 123px;
+  margin-bottom: 0;
+}
+body .center_1000 .form #gray #getwhat div.executiveCommittee {
+  height: auto;
+}
+body .center_1000 .form #gray #getwhat b {
+  width: 124px;
+}
+body .center_1000 .form #gray #zhiweihui {
+  height: 60px;
+}
+body .center_1000 .form #gray #zhiweihui .executiveCommittee {
+  height: auto;
+}
+body .center_1000 .form #gray #zhiweihui .executiveCommittee b {
+  width: 180px;
+}
+body .center_1000 .form #gray #yidongGet {
+  height: 122px;
+}
+body .center_1000 .form #gray #yidongGet .executiveCommittee {
+  height: auto;
+}
+body .center_1000 .form #gray #yidongGet .executiveCommittee b {
+  width: 180px;
+}
+body .center_1000 .form #gray #enterName {
+  height: 98px;
+}
+body .center_1000 .form #gray #enterName select {
+  float: right;
+  margin-right: 170px;
+}
+body .center_1000 .form #gray #enterName input {
+  margin-top: 20px;
+}
+body .center_1000 .form #gray .selectInfo .executiveCommittee {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  float: right;
+  width: 390px;
+  line-height: 30px;
+  height: 30px;
+}
+body .center_1000 .form #gray .selectInfo .executiveCommittee input {
+  display: none;
+  margin-top: 0;
+  height: 18px;
+  width: 18px;
+}
+body .center_1000 .form #gray .selectInfo .executiveCommittee span {
+  cursor: pointer;
+  display: inline-block;
+  background: url(img/PCicon2.png) no-repeat center -16px;
+  margin-top: 0;
+  height: 18px;
+  width: 18px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+body .center_1000 .form #gray .selectInfo .executiveCommittee .selected {
+  background: url(img/PCicon2.png) no-repeat center 2px;
+}
+body .center_1000 .form #gray .selectInfo .executiveCommittee b {
+  width: 93px;
+  display: inline-block;
+}
+body .center_1000 .form #gray .selectInfo .executiveCommittee label {
+  cursor: pointer;
+  vertical-align: 4px;
+  line-height: 30px;
+  height: 30px;
+}
+body .center_1000 .form #gray .enterpriseNumberPhoto {
+  height: 80px;
+}
+body .center_1000 .form #gray .enterpriseNumberPhoto .numberPhonto {
+  height: 80px;
+  width: 80px;
+  float: left;
+  margin-left: 55px;
+}
+body .center_1000 .form #gray .enterpriseNumberPhoto .numberPhonto img {
+  width: 80px;
+  height: 80px;
+}
+body .center_1000 .form #gray .code {
+  position: relative;
+}
+body .center_1000 .form #gray .code input {
+  padding-right: 100px;
+  box-sizing: border-box;
+}
+body .center_1000 .form #gray .code #getCode,
+body .center_1000 .form #gray .code #ResetCode {
+  color: #5BBBFF;
+  width: 100px;
+  position: absolute;
+  right: 176px;
+  top: 0px;
+  cursor: pointer;
+}
+body .center_1000 .form #gray .code #ResetCode {
+  display: none;
+}
+body .center_1000 #tijiao {
+  cursor: pointer;
+  width: 190px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  background: #5BBBFF;
+  color: white;
+  margin: 30px auto;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+/*# sourceMappingURL=PCJoinIot.css.map */

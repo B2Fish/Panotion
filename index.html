@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html data-ng-app='PortalApp' lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" class="">
+<head>
+<meta charset="UTF-8">
+<title>
+    Pantion
+</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../../libs/pantion/commen.css">
+    <link rel="stylesheet" href="../../libs/cdn/angular-ui-notification/0.3.6/angular-ui-notification.min.css" type='text/css'>
+    <script src="https://cdn.bootcss.com/angular.js/1.6.5/angular.js"></script>
+    <!--<script src="../../libs/cdn/angular.js/1.6.5/angular.min.js"></script>-->
+    <script src="../../libs/cdn/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+    <script src="../../libs/cdn/angular-local-storage/0.7.1/angular-local-storage.min.js"></script>
+    <script src="../../libs/cdn/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js"></script>
+    <script src="../../libs/cdn/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+    <script src="../../libs/cdn/angular-ui-notification/0.3.5/angular-ui-notification.min.js"></script>
+    <script src="../../libs/cdn/oclazyload/1.1.0/ocLazyLoad.min.js"></script>
+    <script src="../../libs/cdn/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script charset="utf-8" src="../../libs/pantion/gsap.js"></script>
+    <script charset="utf-8" src="../../libs/pantion/fullpage.js"></script>
+    <script charset="utf-8" src="../../libs/pantion/sectionscroll.js"></script>
+    <link href='./assets/style/client.css' rel='stylesheet'  type='text/css'>
+    <style>
+        .global-header.is-transparent.-theme-light:before{
+            opacity: 0!important;
+        }
+         .mck-logo-icon-p {
+             -webkit-transform: translate3D(0, 0, 0);
+             transform: translate3D(0, 0, 0);
+             border-bottom: 1px solid #757575;
+             color: #051C2C;
+             height:91px;
+             padding-left: 96px;
+             display: -webkit-box;
+             display: -ms-flexbox;
+             display: flex;
+             -webkit-box-align: center;
+             -ms-flex-align: center;
+             align-items: center;
+             -webkit-transition: opacity 0.1s 0.2s ease-in-out;
+             transition: opacity 0.1s 0.2s ease-in-out;
+             background-color: #051C2C;
+             overflow: hidden;
+         }
+         .mck-logo-icon-p img{
+            display: block;
+             width: 136px;
+             height: 96px;
+             overflow: hidden;
+         }
+    </style>
+</head>
+<body class="windows fp-viewing-0" style="overflow: hidden; height: 100%;">
+    <header class="global-header global-header-r3 navigation-r3   is-transparent -theme-light" role="banner">
+        <!-- BEGIN NAVIGATION WHITE BAR -->
+        <a class="menu-toggle" href="javascript:;" aria-label="切换菜单">
+            <span class="menu-hamburger"><span></span></span>
+        </a>
+        <!--BEGIN GLOBAL HAMBURGER NAVIGATION-->
+        <section id="ctl20_ctl00_ctl00_hamburgerSection" class="hamburger-nav" aria-hidden="true"
+                 data-module="HamburgerNav" data-level="-menu-level1" style="z-index: 99999">
+            <a class="menu-toggle" href="javascript:;" aria-label="切换菜单" style="background: #ff0000">
+                <span class="menu-hamburger"><span></span></span>
+            </a>
+            <div class="main-nav-inner" style="height: 649px;background: #ff0000">
+                <a href="#/index" class="mck-logo-icon-p" style="background: #ff0000;" id="isShow">
+                    <img src="./assets/image/logo2.png" alt="" class="nav-logo-" >
+                </a>
+                <button type="button" class="search-nav-button mck-search-icon" aria-label="切换搜索栏">
+                </button>
+                <nav class="main-nav" role="menu" style="background: #ff0000">
+
+                    <!--BEGIN GLOBAL HAMBURGER MENU NAVIGATION-->
+
+                    <ul class="nav-list nav-group-left" style="background: #ff0000">
+
+                        <li role="menuitem" aria-haspopup="true"
+                            class="nav-item nav-link-item has-children nav-item--active" aria-expanded="false"
+                            aria-hidden="false">
+                            <a href="#/market"><font style="vertical-align: inherit;"><font
+                                    style="vertical-align: inherit;">行业</font></font></a>
+                            <div class="sub-nav">
+                                <header class="sub-nav-header">
+                                    <a href="#0" class="close-sub-nav" aria-hidden="true"></a>
+                                    <span class="sub-nav-title" id="nav-group-title-Industries">行业</span>
+                                </header>
+                                <div class="sub-nav-links">
+                                    <div class="column">
+                                        <ul class="nav-list" aria-labelledby="nav-group-title-Industries">
+                                            <li role="menuitem" aria-haspopup="true"
+                                                class="sub-nav-item  nav-link-item  has-children" aria-hidden="true" aria-expanded="false">
+                                                <a href="#/market"><span>行业详情</span></a>
+                                            </li>
+
+                                            <li role="menuitem" aria-haspopup="true"
+                                                class="sub-nav-item  nav-link-item  has-children" aria-hidden="true"
+                                                aria-expanded="false"><a
+                                                    href="/business-functions/mckinsey-accelerate/how-we-help-clients"><span><font
+                                                    style="vertical-align: inherit;"><font
+                                                    style="vertical-align: inherit;">麦肯锡加速</font></font></span></a>
+
+                                                <div class="sub-nav">
+                                                    <header class="sub-nav-header">
+                                                        <a href="#0" class="close-sub-nav" aria-hidden="true"></a>
+                                                        <span class="sub-nav-title"
+                                                              id="nav-group-title-McKinsey-Accelerate"><font
+                                                                style="vertical-align: inherit;"><font
+                                                                style="vertical-align: inherit;">
+                                        麦肯锡加速
+                                    </font></font></span>
+                                                    </header>
+                                                    <div class="sub-nav-links">
+                                                        <div class="column">
+                                                            <ul class="nav-list"
+                                                                aria-labelledby="nav-group-title-McKinsey-Accelerate">
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-accelerate/how-we-help-clients"><span><font
+                                                                            style="vertical-align: inherit;"><font
+                                                                            style="vertical-align: inherit;">我们如何帮助客户</font></font></span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-accelerate/our-insights"><span><font
+                                                                            style="vertical-align: inherit;"><font
+                                                                            style="vertical-align: inherit;">我们的见解</font></font></span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-accelerate/our-people"><span><font
+                                                                            style="vertical-align: inherit;"><font
+                                                                            style="vertical-align: inherit;">我们的人</font></font></span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-accelerate/contact-us"><span><font
+                                                                            style="vertical-align: inherit;"><font
+                                                                            style="vertical-align: inherit;">联系我们</font></font></span></a>
+
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <footer class="sub-nav-footer">
+                                    <a class="cta -arrow" href="/insights" aria-hidden="true"><font
+                                            style="vertical-align: inherit;"><font style="vertical-align: inherit;">探索我们的特色见解</font></font></a>
+                                </footer>
+                            </div>
+
+                        </li>
+
+                        <li role="menuitem" aria-haspopup="true" class="nav-item nav-link-item has-children"
+                            aria-expanded="false" aria-hidden="false">
+                            <a href="#ability" ng-click="shupdown()"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">能力</font></font></a>
+                            <div class="sub-nav">
+                                <header class="sub-nav-header">
+                                    <a href="#0" class="close-sub-nav" aria-hidden="true"></a>
+                                    <span class="sub-nav-title" id="nav-group-title-Business-Functions"><font
+                                            style="vertical-align: inherit;"><font style="vertical-align: inherit;">业务职能</font></font></span>
+                                </header>
+                                <div class="sub-nav-links">
+                                    <div class="column">
+                                        <ul class="nav-list" aria-labelledby="nav-group-title-Business-Functions">
+
+                                            <li role="menuitem" aria-haspopup="true"
+                                                class="sub-nav-item  nav-link-item  has-children" aria-hidden="true"
+                                                aria-expanded="false"><a
+                                                    href="/business-functions/mckinsey-accelerate/how-we-help-clients"><span><font
+                                                    style="vertical-align: inherit;"><font
+                                                    style="vertical-align: inherit;">麦肯锡加速</font></font></span></a>
+
+                                                <div class="sub-nav">
+                                                    <header class="sub-nav-header">
+                                                        <a href="#0" class="close-sub-nav" aria-hidden="true"></a>
+                                                        <span class="sub-nav-title"
+                                                              id="nav-group-title-McKinsey-Accelerate"><font
+                                                                style="vertical-align: inherit;"><font
+                                                                style="vertical-align: inherit;">
+                                        麦肯锡加速
+                                    </font></font></span>
+                                                    </header>
+                                                    <div class="sub-nav-links">
+                                                        <div class="column">
+                                                            <ul class="nav-list"
+                                                                aria-labelledby="nav-group-title-McKinsey-Accelerate">
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-accelerate/how-we-help-clients"><span><font
+                                                                            style="vertical-align: inherit;"><font
+                                                                            style="vertical-align: inherit;">我们如何帮助客户</font></font></span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-accelerate/our-insights"><span><font
+                                                                            style="vertical-align: inherit;"><font
+                                                                            style="vertical-align: inherit;">我们的见解</font></font></span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-accelerate/our-people"><span><font
+                                                                            style="vertical-align: inherit;"><font
+                                                                            style="vertical-align: inherit;">我们的人</font></font></span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-accelerate/contact-us"><span><font
+                                                                            style="vertical-align: inherit;"><font
+                                                                            style="vertical-align: inherit;">联系我们</font></font></span></a>
+
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </li>
+
+                                            <li role="menuitem" aria-haspopup="true"
+                                                class="sub-nav-item  nav-link-item  has-children" aria-hidden="true"
+                                                aria-expanded="false"><a
+                                                    href="/business-functions/mckinsey-analytics/our-insights"><span>McKinsey Analytics</span></a>
+
+                                                <div class="sub-nav">
+                                                    <header class="sub-nav-header">
+                                                        <a href="#0" class="close-sub-nav" aria-hidden="true"></a>
+                                                        <span class="sub-nav-title"
+                                                              id="nav-group-title-McKinsey-Analytics">
+                                        McKinsey Analytics
+                                    </span>
+                                                    </header>
+                                                    <div class="sub-nav-links">
+                                                        <div class="column">
+                                                            <ul class="nav-list"
+                                                                aria-labelledby="nav-group-title-McKinsey-Analytics">
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-analytics/our-insights"><span>Our Insights</span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-analytics/how-we-help-clients"><span>How We Help Clients</span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-analytics/our-people"><span>Our People</span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-analytics/careers"><span>Careers</span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-analytics/contact-us"><span>Contact Us</span></a>
+
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </li>>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <footer class="sub-nav-footer">
+                                    <a class="cta -arrow" href="/insights" aria-hidden="true">Explore our featured
+                                        insights</a>
+                                </footer>
+                            </div>
+
+                        </li>
+                        <li role="menuitem" aria-haspopup="true" class="nav-item nav-link-item has-children"
+                            aria-expanded="false" aria-hidden="false">
+                            <a href="#insight"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">洞察</font></font></a>
+                            <div class="sub-nav">
+                                <header class="sub-nav-header">
+                                    <a href="#0" class="close-sub-nav" aria-hidden="true"></a>
+                                    <span class="sub-nav-title" id="nav-group-title-Business-Functions"><font
+                                            style="vertical-align: inherit;"><font style="vertical-align: inherit;">业务职能</font></font></span>
+                                </header>
+                                <div class="sub-nav-links">
+                                    <div class="column">
+                                        <ul class="nav-list" aria-labelledby="nav-group-title-Business-Functions">
+
+                                            <li role="menuitem" aria-haspopup="true"
+                                                class="sub-nav-item  nav-link-item  has-children" aria-hidden="true"
+                                                aria-expanded="false"><a
+                                                    href="/business-functions/mckinsey-accelerate/how-we-help-clients"><span><font
+                                                    style="vertical-align: inherit;"><font
+                                                    style="vertical-align: inherit;">麦肯锡加速</font></font></span></a>
+
+                                                <div class="sub-nav">
+                                                    <header class="sub-nav-header">
+                                                        <a href="#0" class="close-sub-nav" aria-hidden="true"></a>
+                                                        <span class="sub-nav-title"
+                                                              id="nav-group-title-McKinsey-Accelerate"><font
+                                                                style="vertical-align: inherit;"><font
+                                                                style="vertical-align: inherit;">
+                                        麦肯锡加速
+                                    </font></font></span>
+                                                    </header>
+                                                    <div class="sub-nav-links">
+                                                        <div class="column">
+                                                            <ul class="nav-list"
+                                                                aria-labelledby="nav-group-title-McKinsey-Accelerate">
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-accelerate/how-we-help-clients"><span><font
+                                                                            style="vertical-align: inherit;"><font
+                                                                            style="vertical-align: inherit;">我们如何帮助客户</font></font></span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-accelerate/our-insights"><span><font
+                                                                            style="vertical-align: inherit;"><font
+                                                                            style="vertical-align: inherit;">我们的见解</font></font></span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-accelerate/our-people"><span><font
+                                                                            style="vertical-align: inherit;"><font
+                                                                            style="vertical-align: inherit;">我们的人</font></font></span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-accelerate/contact-us"><span><font
+                                                                            style="vertical-align: inherit;"><font
+                                                                            style="vertical-align: inherit;">联系我们</font></font></span></a>
+
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </li>
+
+                                            <li role="menuitem" aria-haspopup="true"
+                                                class="sub-nav-item  nav-link-item  has-children" aria-hidden="true"
+                                                aria-expanded="false"><a
+                                                    href="/business-functions/mckinsey-analytics/our-insights"><span>McKinsey Analytics</span></a>
+
+                                                <div class="sub-nav">
+                                                    <header class="sub-nav-header">
+                                                        <a href="#0" class="close-sub-nav" aria-hidden="true"></a>
+                                                        <span class="sub-nav-title"
+                                                              id="nav-group-title-McKinsey-Analytics">
+                                        McKinsey Analytics
+                                    </span>
+                                                    </header>
+                                                    <div class="sub-nav-links">
+                                                        <div class="column">
+                                                            <ul class="nav-list"
+                                                                aria-labelledby="nav-group-title-McKinsey-Analytics">
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-analytics/our-insights"><span>Our Insights</span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-analytics/how-we-help-clients"><span>How We Help Clients</span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-analytics/our-people"><span>Our People</span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-analytics/careers"><span>Careers</span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-analytics/contact-us"><span>Contact Us</span></a>
+
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </li>>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <footer class="sub-nav-footer">
+                                    <a class="cta -arrow" href="/insights" aria-hidden="true">Explore our featured
+                                        insights</a>
+                                </footer>
+                            </div>
+
+                        </li>
+                        <li role="menuitem" aria-haspopup="true" class="nav-item nav-link-item has-children"
+                            aria-expanded="false" aria-hidden="false">
+                            <a href="#recruit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">招聘</font></font></a>
+                            <div class="sub-nav">
+                                <header class="sub-nav-header">
+                                    <a href="#0" class="close-sub-nav" aria-hidden="true"></a>
+                                    <span class="sub-nav-title" id="nav-group-title-Business-Functions"><font
+                                            style="vertical-align: inherit;"><font style="vertical-align: inherit;">业务职能</font></font></span>
+                                </header>
+                                <div class="sub-nav-links">
+                                    <div class="column">
+                                        <ul class="nav-list" aria-labelledby="nav-group-title-Business-Functions">
+
+                                            <li role="menuitem" aria-haspopup="true"
+                                                class="sub-nav-item  nav-link-item  has-children" aria-hidden="true"
+                                                aria-expanded="false"><a
+                                                    href="/business-functions/mckinsey-accelerate/how-we-help-clients"><span><font
+                                                    style="vertical-align: inherit;"><font
+                                                    style="vertical-align: inherit;">麦肯锡加速</font></font></span></a>
+
+                                                <div class="sub-nav">
+                                                    <header class="sub-nav-header">
+                                                        <a href="#0" class="close-sub-nav" aria-hidden="true"></a>
+                                                        <span class="sub-nav-title"
+                                                              id="nav-group-title-McKinsey-Accelerate"><font
+                                                                style="vertical-align: inherit;"><font
+                                                                style="vertical-align: inherit;">
+                                        麦肯锡加速
+                                    </font></font></span>
+                                                    </header>
+                                                    <div class="sub-nav-links">
+                                                        <div class="column">
+                                                            <ul class="nav-list"
+                                                                aria-labelledby="nav-group-title-McKinsey-Accelerate">
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-accelerate/how-we-help-clients"><span><font
+                                                                            style="vertical-align: inherit;"><font
+                                                                            style="vertical-align: inherit;">我们如何帮助客户</font></font></span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-accelerate/our-insights"><span><font
+                                                                            style="vertical-align: inherit;"><font
+                                                                            style="vertical-align: inherit;">我们的见解</font></font></span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-accelerate/our-people"><span><font
+                                                                            style="vertical-align: inherit;"><font
+                                                                            style="vertical-align: inherit;">我们的人</font></font></span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-accelerate/contact-us"><span><font
+                                                                            style="vertical-align: inherit;"><font
+                                                                            style="vertical-align: inherit;">联系我们</font></font></span></a>
+
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </li>
+
+                                            <li role="menuitem" aria-haspopup="true"
+                                                class="sub-nav-item  nav-link-item  has-children" aria-hidden="true"
+                                                aria-expanded="false"><a
+                                                    href="/business-functions/mckinsey-analytics/our-insights"><span>McKinsey Analytics</span></a>
+
+                                                <div class="sub-nav">
+                                                    <header class="sub-nav-header">
+                                                        <a href="#0" class="close-sub-nav" aria-hidden="true"></a>
+                                                        <span class="sub-nav-title"
+                                                              id="nav-group-title-McKinsey-Analytics">
+                                        McKinsey Analytics
+                                    </span>
+                                                    </header>
+                                                    <div class="sub-nav-links">
+                                                        <div class="column">
+                                                            <ul class="nav-list"
+                                                                aria-labelledby="nav-group-title-McKinsey-Analytics">
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-analytics/our-insights"><span>Our Insights</span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-analytics/how-we-help-clients"><span>How We Help Clients</span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-analytics/our-people"><span>Our People</span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-analytics/careers"><span>Careers</span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-analytics/contact-us"><span>Contact Us</span></a>
+
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </li>>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <footer class="sub-nav-footer">
+                                    <a class="cta -arrow" href="/insights" aria-hidden="true">Explore our featured
+                                        insights</a>
+                                </footer>
+                            </div>
+
+                        </li>
+                        <li role="menuitem" aria-haspopup="true" class="nav-item nav-link-item has-children"
+                            aria-expanded="false" aria-hidden="false">
+                            <a href="#office"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">办公室</font></font></a>
+                            <div class="sub-nav">
+                                <header class="sub-nav-header">
+                                    <a href="#0" class="close-sub-nav" aria-hidden="true"></a>
+                                    <span class="sub-nav-title" id="nav-group-title-Business-Functions"><font
+                                            style="vertical-align: inherit;"><font style="vertical-align: inherit;">业务职能</font></font></span>
+                                </header>
+                                <div class="sub-nav-links">
+                                    <div class="column">
+                                        <ul class="nav-list" aria-labelledby="nav-group-title-Business-Functions">
+
+                                            <li role="menuitem" aria-haspopup="true"
+                                                class="sub-nav-item  nav-link-item  has-children" aria-hidden="true"
+                                                aria-expanded="false"><a
+                                                    href="/business-functions/mckinsey-accelerate/how-we-help-clients"><span><font
+                                                    style="vertical-align: inherit;"><font
+                                                    style="vertical-align: inherit;">麦肯锡加速</font></font></span></a>
+
+                                                <div class="sub-nav">
+                                                    <header class="sub-nav-header">
+                                                        <a href="#0" class="close-sub-nav" aria-hidden="true"></a>
+                                                        <span class="sub-nav-title"
+                                                              id="nav-group-title-McKinsey-Accelerate"><font
+                                                                style="vertical-align: inherit;"><font
+                                                                style="vertical-align: inherit;">
+                                        麦肯锡加速
+                                    </font></font></span>
+                                                    </header>
+                                                    <div class="sub-nav-links">
+                                                        <div class="column">
+                                                            <ul class="nav-list"
+                                                                aria-labelledby="nav-group-title-McKinsey-Accelerate">
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-accelerate/how-we-help-clients"><span><font
+                                                                            style="vertical-align: inherit;"><font
+                                                                            style="vertical-align: inherit;">我们如何帮助客户</font></font></span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-accelerate/our-insights"><span><font
+                                                                            style="vertical-align: inherit;"><font
+                                                                            style="vertical-align: inherit;">我们的见解</font></font></span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-accelerate/our-people"><span><font
+                                                                            style="vertical-align: inherit;"><font
+                                                                            style="vertical-align: inherit;">我们的人</font></font></span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-accelerate/contact-us"><span><font
+                                                                            style="vertical-align: inherit;"><font
+                                                                            style="vertical-align: inherit;">联系我们</font></font></span></a>
+
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </li>
+
+                                            <li role="menuitem" aria-haspopup="true"
+                                                class="sub-nav-item  nav-link-item  has-children" aria-hidden="true"
+                                                aria-expanded="false"><a
+                                                    href="/business-functions/mckinsey-analytics/our-insights"><span>McKinsey Analytics</span></a>
+
+                                                <div class="sub-nav">
+                                                    <header class="sub-nav-header">
+                                                        <a href="#0" class="close-sub-nav" aria-hidden="true"></a>
+                                                        <span class="sub-nav-title"
+                                                              id="nav-group-title-McKinsey-Analytics">
+                                        McKinsey Analytics
+                                    </span>
+                                                    </header>
+                                                    <div class="sub-nav-links">
+                                                        <div class="column">
+                                                            <ul class="nav-list"
+                                                                aria-labelledby="nav-group-title-McKinsey-Analytics">
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-analytics/our-insights"><span>Our Insights</span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-analytics/how-we-help-clients"><span>How We Help Clients</span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-analytics/our-people"><span>Our People</span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-analytics/careers"><span>Careers</span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-analytics/contact-us"><span>Contact Us</span></a>
+
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </li>>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <footer class="sub-nav-footer">
+                                    <a class="cta -arrow" href="/insights" aria-hidden="true">Explore our featured
+                                        insights</a>
+                                </footer>
+                            </div>
+
+                        </li>
+                        <li role="menuitem" aria-haspopup="true" class="nav-item nav-link-item has-children"
+                            aria-expanded="false" aria-hidden="false">
+                            <a href="#aboutUs"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">关于我们</font></font></a>
+                            <div class="sub-nav">
+                                <header class="sub-nav-header">
+                                    <a href="#0" class="close-sub-nav" aria-hidden="true"></a>
+                                    <span class="sub-nav-title" id="nav-group-title-Business-Functions"><font
+                                            style="vertical-align: inherit;"><font style="vertical-align: inherit;">业务职能</font></font></span>
+                                </header>
+                                <div class="sub-nav-links">
+                                    <div class="column">
+                                        <ul class="nav-list" aria-labelledby="nav-group-title-Business-Functions">
+
+                                            <li role="menuitem" aria-haspopup="true"
+                                                class="sub-nav-item  nav-link-item  has-children" aria-hidden="true"
+                                                aria-expanded="false"><a
+                                                    href="/business-functions/mckinsey-accelerate/how-we-help-clients"><span><font
+                                                    style="vertical-align: inherit;"><font
+                                                    style="vertical-align: inherit;">麦肯锡加速</font></font></span></a>
+
+                                                <div class="sub-nav">
+                                                    <header class="sub-nav-header">
+                                                        <a href="#0" class="close-sub-nav" aria-hidden="true"></a>
+                                                        <span class="sub-nav-title"
+                                                              id="nav-group-title-McKinsey-Accelerate"><font
+                                                                style="vertical-align: inherit;"><font
+                                                                style="vertical-align: inherit;">
+                                        麦肯锡加速
+                                    </font></font></span>
+                                                    </header>
+                                                    <div class="sub-nav-links">
+                                                        <div class="column">
+                                                            <ul class="nav-list"
+                                                                aria-labelledby="nav-group-title-McKinsey-Accelerate">
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-accelerate/how-we-help-clients"><span><font
+                                                                            style="vertical-align: inherit;"><font
+                                                                            style="vertical-align: inherit;">我们如何帮助客户</font></font></span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-accelerate/our-insights"><span><font
+                                                                            style="vertical-align: inherit;"><font
+                                                                            style="vertical-align: inherit;">我们的见解</font></font></span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-accelerate/our-people"><span><font
+                                                                            style="vertical-align: inherit;"><font
+                                                                            style="vertical-align: inherit;">我们的人</font></font></span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-accelerate/contact-us"><span><font
+                                                                            style="vertical-align: inherit;"><font
+                                                                            style="vertical-align: inherit;">联系我们</font></font></span></a>
+
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </li>
+
+                                            <li role="menuitem" aria-haspopup="true"
+                                                class="sub-nav-item  nav-link-item  has-children" aria-hidden="true"
+                                                aria-expanded="false"><a
+                                                    href="/business-functions/mckinsey-analytics/our-insights"><span>McKinsey Analytics</span></a>
+
+                                                <div class="sub-nav">
+                                                    <header class="sub-nav-header">
+                                                        <a href="#0" class="close-sub-nav" aria-hidden="true"></a>
+                                                        <span class="sub-nav-title"
+                                                              id="nav-group-title-McKinsey-Analytics">
+                                        McKinsey Analytics
+                                    </span>
+                                                    </header>
+                                                    <div class="sub-nav-links">
+                                                        <div class="column">
+                                                            <ul class="nav-list"
+                                                                aria-labelledby="nav-group-title-McKinsey-Analytics">
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-analytics/our-insights"><span>Our Insights</span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-analytics/how-we-help-clients"><span>How We Help Clients</span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-analytics/our-people"><span>Our People</span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-analytics/careers"><span>Careers</span></a>
+
+                                                                </li>
+
+                                                                <li role="menuitem" class="sub-nav-item nav-link-item"
+                                                                    aria-hidden="true" aria-expanded="false">
+                                                                    <a href="/business-functions/mckinsey-analytics/contact-us"><span>Contact Us</span></a>
+
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </li>>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <footer class="sub-nav-footer">
+                                    <a class="cta -arrow" href="/insights" aria-hidden="true">Explore our featured
+                                        insights</a>
+                                </footer>
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </nav>
+            </div>
+        </section>
+        <div class="hamburger-curtain"></div>
+        <!-- END GLOBAL HAMBURGER NAVIGATION -->
+        <!--BEGIN NAVIGATION MENU -->
+        <div class="logo-container">
+            <a href="#/index" class="names  alone">
+                <img src="./assets/image/logo2.png" alt="" class="nav-logo-1">
+            </a>
+
+        </div>
+        <section class="top-bar">
+            <div class="top-bar-inner">
+
+
+                <!--BEGIN NAV/PRIMARY NAVIGATION -->
+
+                <!-- <div class="global-primary-nav-r3 show-nav" data-module="PrimaryNavigation" role="banner">
+
+                     <nav class="primary-navigation" role="navigation">
+                         <ul class="nav-list nav-group-left" role="menubar" style="padding-left: 0px">
+
+                             <li class="nav-item has-children" role="menu" aria-haspopup="true" aria-expanded="false">
+                                 <a href="#0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">行业</font></font></a>
+                                 <div class="sub-nav">
+                                     <header class="sub-nav-header">
+                                         <a href="#0 " class="close-sub-nav"></a>
+                                         <span class="sub-nav-title" id="primary-nav-group-title-Industries"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">产业领域</font></font></span>
+                                     </header>
+                                     <div class="sub-nav-links">
+
+                                         <div class="column">
+                                             <ul class="nav-list" aria-labelledby="primary-nav-group-title-Industries">
+
+                                                 <li class="sub-nav-item"><a href="/industries/advanced-electronics/our-insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">先进电子</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/industries/aerospace-and-defense/our-insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">航空航天与国防</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/industries/agriculture/our-insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">农业</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/industries/automotive-and-assembly/our-insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">汽车与装配</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/industries/capital-projects-and-infrastructure/our-insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">基本建设项目</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/industries/chemicals/our-insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">化学制品</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/industries/consumer-packaged-goods/our-insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">包装消费品</font></font></a></li>
+
+                                             </ul>
+                                         </div>
+
+                                         <div class="column">
+                                             <ul class="nav-list" aria-labelledby="primary-nav-group-title-Industries">
+
+                                                 <li class="sub-nav-item"><a href="/industries/electric-power-and-natural-gas/our-insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">电力与天然气</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/industries/financial-services/our-insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">金融服务</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/industries/healthcare-systems-and-services/our-insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">医疗保健系统与服务</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/industries/metals-and-mining/our-insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">金属与采矿</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/industries/oil-and-gas/our-insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">石油和天然气</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/industries/paper-forest-products-and-packaging/our-insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">纸，林产品与包装</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/industries/pharmaceuticals-and-medical-products/our-insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">医药产品</font></font></a></li>
+
+                                             </ul>
+                                         </div>
+
+                                         <div class="column">
+                                             <ul class="nav-list" aria-labelledby="primary-nav-group-title-Industries">
+
+                                                 <li class="sub-nav-item"><a href="/industries/private-equity-and-principal-investors/our-insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">私募股权和主要投资者</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/industries/public-sector/our-insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">公共部门</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/industries/retail/our-insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">零售</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/industries/semiconductors/our-insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">半导体类</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/industries/social-sector/our-insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">社会部门</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/industries/technology-media-and-telecommunications/our-insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">技术，媒体和电信</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/industries/travel-transport-and-logistics/our-insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">旅行，运输和物流</font></font></a></li>
+
+                                             </ul>
+                                         </div>
+
+                                     </div>
+                                     <footer class="sub-nav-footer">
+                                         <a class="cta -arrow" href="/insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">探索我们的特色见解</font></font></a>
+                                     </footer>
+                                 </div>
+                             </li>
+
+                             <li class="nav-item has-children" role="menu" aria-haspopup="true" aria-expanded="false">
+                                 <a href="#0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">能力</font></font></a>
+                                 <div class="sub-nav">
+                                     <header class="sub-nav-header">
+                                         <a href="#0 " class="close-sub-nav"></a>
+                                         <span class="sub-nav-title" id="primary-nav-group-title-Business-Functions"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">业务职能</font></font></span>
+                                     </header>
+                                     <div class="sub-nav-links">
+
+                                         <div class="column">
+                                             <ul class="nav-list" aria-labelledby="primary-nav-group-title-Business-Functions">
+
+                                                 <li class="sub-nav-item"><a href="/business-functions/mckinsey-accelerate/how-we-help-clients"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">麦肯锡加速</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/business-functions/mckinsey-analytics/our-insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">麦肯锡分析</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/business-functions/mckinsey-design/our-insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">麦肯锡设计</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/business-functions/mckinsey-digital/how-we-help-clients"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数字</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/business-functions/mckinsey-implementation/how-we-help-clients"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">实作</font></font></a></li>
+
+                                             </ul>
+                                         </div>
+
+                                         <div class="column">
+                                             <ul class="nav-list" aria-labelledby="primary-nav-group-title-Business-Functions">
+
+                                                 <li class="sub-nav-item"><a href="/business-functions/learning-programs-for-clients/overview"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">客户学习计划</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/business-functions/m-and-a/our-insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">嘛</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/business-functions/marketing-and-sales/our-insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">市场销售</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/business-functions/operations/our-insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运作方式</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/business-functions/organization/our-insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">组织</font></font></a></li>
+
+                                             </ul>
+                                         </div>
+
+                                         <div class="column">
+                                             <ul class="nav-list" aria-labelledby="primary-nav-group-title-Business-Functions">
+
+                                                 <li class="sub-nav-item"><a href="/business-functions/risk/our-insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">风险</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/business-functions/strategy-and-corporate-finance/our-insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">战略与企业融资</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/business-functions/sustainability/our-insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可持续发展</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/business-functions/transformation/our-insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">转型</font></font></a></li>
+
+                                             </ul>
+                                         </div>
+
+                                     </div>
+                                     <footer class="sub-nav-footer">
+                                         <a class="cta -arrow" href="/insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">探索我们的特色见解</font></font></a>
+                                     </footer>
+                                 </div>
+                             </li>
+
+                             <li id="ctl20_ctl00_ctl01_ctl01_ctl01_parentLitag" class="nav-item careers dynamic-item has-children">
+                                 <a href="#0" id="sub-nav-title-careers"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">洞察</font></font></a>
+                                 <div class="sub-nav">
+
+                                     <div class="sub-nav-links">
+                                         <div class="column">
+                                             <ul id="ctl20_ctl00_ctl01_ctl01_ctl01_ChildUlTag" class="nav-list" aria-labelledby="sub-nav-title-careers">
+
+                                                 <li class="sub-nav-item"><a href="/business-functions/mckinsey-design/how-we-help-clients"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">麦肯锡设计</font></font></span></a></li><li class="sub-nav-item"><a href="/business-functions/mckinsey-digital/how-we-help-clients"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">麦肯锡数字</font></font></span></a></li><li class="sub-nav-item"><a href="/featured-insights/internet-of-things/our-insights"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">物联网</font></font></span></a></li><li class="sub-nav-item"><a href="/business-functions/mckinsey-analytics/our-insights"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">麦肯锡分析</font></font></span></a></li><li class="sub-nav-item"><a href="/solutions"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">解决方案</font></font></span></a></li></ul>
+                                         </div>
+                                     </div>
+                                     <footer class="sub-nav-footer">
+                                         <a class="cta -arrow" href="/insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">探索我们的特色见解</font></font></a>
+                                     </footer>
+                                 </div>
+                             </li>
+
+                             <li class="nav-item global-themes has-children" role="menu" aria-haspopup="true" aria-expanded="false">
+                                 <a href="#0" id="primary-global-themes-subnav"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">招聘</font></font></a>
+                                 <div class="sub-nav" aria-labelledby="primary-global-themes-subnav">
+                                     <header class="sub-nav-header">
+                                         <a href="#0 " class="close-sub-nav"></a>
+                                         <span class="sub-nav-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">特色见解</font></font></span>
+                                     </header>
+                                     <div class="sub-nav-links">
+                                         <div class="column double-column">
+                                             <div class="row">
+                                                 <span class="column-header" id="primary-topic-title-Editors-Choice"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编辑选择</font></font></span>
+
+                                                 <ul class="nav-list" aria-labelledby="primary-topic-title-Trending-topics primary-global-themes-subnav">
+                                                     <li class="sub-nav-item">
+                                                         <a href="/insights"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">探索我们的特色见解</font></font></a>
+                                                     </li>
+                                                 </ul>
+                                             </div>
+                                             <div class="row">
+
+                                                 <span class="column-header" id="primary-topic-title-Trending-topics"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">热门话题</font></font></span>
+
+
+                                                 &lt;!&ndash; original nav header &ndash;&gt;
+                                                 <ul class="nav-list" aria-labelledby="primary-topic-title-Trending-topics primary-global-themes-subnav">
+
+                                                     <li class="sub-nav-item"><a href="/featured-insights/africas-business-revolution"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">非洲的商业革命</font></font></a></li>
+
+                                                     <li class="sub-nav-item"><a href="/featured-insights/agile-organizations"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">敏捷组织</font></font></a></li>
+
+                                                     <li class="sub-nav-item"><a href="/featured-insights/gender-equality"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">性别平等</font></font></a></li>
+
+                                                     <li class="sub-nav-item"><a href="/featured-insights/globalization"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">全球化</font></font></a></li>
+
+                                                     <li class="sub-nav-item"><a href="/featured-insights/leadership"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">领导</font></font></a></li>
+
+                                                 </ul>
+
+
+                                                 &lt;!&ndash; original nav header &ndash;&gt;
+                                                 <ul class="nav-list" aria-labelledby="primary-topic-title-Trending-topics primary-global-themes-subnav">
+
+                                                     <li class="sub-nav-item"><a href="/featured-insights/regions-in-focus"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">重点地区</font></font></a></li>
+
+                                                     <li class="sub-nav-item"><a href="/featured-insights/artificial-intelligence"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">人工智能</font></font></a></li>
+
+                                                     <li class="sub-nav-item"><a href="/featured-insights/future-of-asia"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">亚洲的未来</font></font></a></li>
+
+                                                     <li class="sub-nav-item"><a href="/featured-insights/future-of-work"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">工作的未来 </font></font></a></li>
+
+                                                     <li class="sub-nav-item"><a href="/featured-insights/strategy-to-beat-the-odds"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">打败策略</font></font></a></li>
+
+                                                 </ul>
+
+                                             </div>
+                                         </div>
+                                         <div class="column single-column">
+                                             <span class="column-header" id="primary-topic-title-Featured"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">精选</font></font></span>
+
+
+                                             <ul class="nav-list" aria-labelledby="primary-topic-title-Featured primary-global-themes-subnav">
+
+                                                 <li class="sub-nav-item">
+                                                     <a href="/mgi/overview"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                         麦肯锡全球研究所
+                                                     </font></font><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们的使命是帮助多个部门的领导人加深对全球经济的了解。</font></font></p>
+                                                     </a>
+                                                 </li>
+
+                                                 <li class="sub-nav-item">
+                                                     <a href="/quarterly/overview">
+                                                         <em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">麦肯锡季刊</font></font></em>
+                                                         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">自1964年以来，我们的旗舰业务出版物就一直在定义和通知高级管理人员的议程。</font></font></p>
+                                                     </a>
+                                                 </li>
+
+                                             </ul>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </li>
+                             <li class="nav-item">
+                                 <a href="/locations"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">办公室</font></font></a>
+                             </li>
+
+                             <li class="nav-item careers has-children" role="menu" aria-haspopup="true">
+                                 <a href="#0" id="primary-sub-nav-title-careers"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">关于我们</font></font></a>
+                                 <div class="sub-nav">
+                                     <div class="sub-nav-links">
+                                         <div class="column">
+                                             <ul class="nav-list" aria-labelledby="primary-sub-nav-title-careers">
+
+                                                 <li class="sub-nav-item"><a href="/careers/home"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">家</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/careers/search-jobs"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">搜索工作</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/careers/explore"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">探索</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/careers/meet-our-people"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们的人</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/careers/interviewing"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">面试</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/careers/students"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">学生们</font></font></a></li>
+
+                                                 <li class="sub-nav-item"><a href="/careers/experienced-professionals"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">经验丰富的专业人员</font></font></a></li>
+
+                                             </ul>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </li>
+
+                         </ul>
+
+                     </nav>
+
+                 </div>-->
+                <!--END NAV/PRIMARY NAVIGATION -->
+
+
+                <div data-module="SearchSuggestions"></div>
+                <div class="search-nav" data-module="SearchNav">
+                    <span class="search-nav-input-icon mck-search-icon"></span>
+                    <input class="search-nav-input" type="search" title="搜索" placeholder="Type to search..." value=""
+                           aria-live="polite">
+                    <button type="button" class="search-nav-button-close desktop mck-close-icon" aria-label="切换搜索栏">
+                    </button>
+                    <button class="search-nav-submit" type="button" name="search" title="搜索"><font
+                            style="vertical-align: inherit;"><font style="vertical-align: inherit;">搜索</font></font>
+                    </button>
+                    <ul class="search-nav-suggestions">
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+        <!--END NAVIGATION MENU-->
+        <div class="nav-right">
+            <ul>
+
+                <li class="toggle-search">
+                    <a href="javascript:;" class="search-nav-button" aria-label="切换搜索栏">
+                        <img src="./assets/image/sousuo-bai.png" alt="">
+                    </a>
+                    <a href="javascript:;" class="search-nav-button-close mobile mck-close-icon" aria-label="切换搜索栏"></a>
+                </li>
+
+                <li class="toggle-login has-children" aria-expanded="false" aria-haspopup="true">
+                    <a class="" href="javascript:;" aria-label="语言切换">
+                        <img src="./assets/image/idx4.png" alt="">
+                    </a>
+                    <ul class="sub-nav">
+                        <li class="sub-nav-item"><a href="https://www.mckinsey.com/user-registration/register"
+                                                    aria-label="订阅"><font style="vertical-align: inherit;"><font
+                                style="vertical-align: inherit;">订阅</font></font></a></li>
+                        <li class="sub-nav-item"><a href="https://www.mckinsey.com/user-registration/signin"
+                                                    aria-label="登入"><font style="vertical-align: inherit;"><font
+                                style="vertical-align: inherit;">登入</font></font></a></li>
+                    </ul>
+                </li>
+
+
+            </ul>
+        </div>
+        <!-- END NAVIGATION WHITE BAR -->
+    </header>
+    <!--语言切换-->
+    <div class="language" >
+        <div class="l-search">
+            <span> | </span>
+            <input type="text" placeholder="搜寻">
+        </div>
+        <ul class="l-ul-">
+            <li>
+                <div class="gq"><svg t="1573033747944" class="icon" viewBox="0 0 1543 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6883" width="30" height="50"><path d="M77.150685 70.136986H1472.876712v883.726028H77.150685V70.136986z" fill="#FD0013" p-id="6884"></path><path d="M294.575342 203.39726l42.082192 84.164384 91.178082 14.027397-70.136986 63.123288 14.027397 91.178082-77.150685-42.082192-84.164383 49.095891 14.027397-91.178083-70.136986-63.123287 91.178082-14.027398 49.09589-91.178082z m343.671233 196.383562l7.013699 21.041096 28.054794 7.013698-21.041095 14.027398 7.013698 28.054794-21.041096-14.027397-28.054794 14.027397 7.013698-28.054794-21.041095-14.027398 28.054794-7.013698 14.027397-21.041096zM547.068493 168.328767v28.054795l21.041096 14.027397-21.041096 14.027397-7.013698 21.041096-21.041096-21.041096H490.958904l21.041096-14.027397-14.027397-28.054795 28.054794 7.013699 21.041096-21.041096zM666.30137 280.547945l-14.027397 21.041096 7.013698 21.041096-21.041096-7.013699-21.041096 21.041096v-28.054794l-28.054794-14.027398 28.054794-7.013698 7.013699-28.054795 14.027397 21.041096h28.054795zM575.123288 540.054795l-21.041096 7.013698-7.013699 28.054795-21.041096-21.041096-28.054794 7.013698 14.027397-21.041095-14.027397-28.054795 28.054794 7.013699 21.041096-21.041096v28.054794l28.054795 14.027398z" fill="#FFFD43" p-id="6885"></path></svg></div>
+                <div class="text1">中国 &nbsp; | &nbsp; ZH</div>
+                <div class="ok_1"><svg t="1573034940641" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7990" width="20" height="50"><path d="M394.627879 722.199273l433.338182-433.353697a23.272727 23.272727 0 1 1 32.923151 32.907636L411.089455 771.568485a23.272727 23.272727 0 0 1-32.923152 0L147.781818 541.168485a23.272727 23.272727 0 1 1 32.907637-32.892121l213.938424 213.922909z" p-id="7991" fill="#ffffff"></path></svg></div>
+            </li>
+            <li>
+                <div class="gq"><svg t="1573033747944" class="icon" viewBox="0 0 1543 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6883" width="30" height="50"><path d="M77.150685 70.136986H1472.876712v883.726028H77.150685V70.136986z" fill="#FD0013" p-id="6884"></path><path d="M294.575342 203.39726l42.082192 84.164384 91.178082 14.027397-70.136986 63.123288 14.027397 91.178082-77.150685-42.082192-84.164383 49.095891 14.027397-91.178083-70.136986-63.123287 91.178082-14.027398 49.09589-91.178082z m343.671233 196.383562l7.013699 21.041096 28.054794 7.013698-21.041095 14.027398 7.013698 28.054794-21.041096-14.027397-28.054794 14.027397 7.013698-28.054794-21.041095-14.027398 28.054794-7.013698 14.027397-21.041096zM547.068493 168.328767v28.054795l21.041096 14.027397-21.041096 14.027397-7.013698 21.041096-21.041096-21.041096H490.958904l21.041096-14.027397-14.027397-28.054795 28.054794 7.013699 21.041096-21.041096zM666.30137 280.547945l-14.027397 21.041096 7.013698 21.041096-21.041096-7.013699-21.041096 21.041096v-28.054794l-28.054794-14.027398 28.054794-7.013698 7.013699-28.054795 14.027397 21.041096h28.054795zM575.123288 540.054795l-21.041096 7.013698-7.013699 28.054795-21.041096-21.041096-28.054794 7.013698 14.027397-21.041095-14.027397-28.054795 28.054794 7.013699 21.041096-21.041096v28.054794l28.054795 14.027398z" fill="#FFFD43" p-id="6885"></path></svg></div>
+                <div class="text1">中国 &nbsp; | &nbsp; ZH</div>
+            </li>
+            <li>
+                <div class="gq"><svg t="1573033747944" class="icon" viewBox="0 0 1543 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6883" width="30" height="50"><path d="M77.150685 70.136986H1472.876712v883.726028H77.150685V70.136986z" fill="#FD0013" p-id="6884"></path><path d="M294.575342 203.39726l42.082192 84.164384 91.178082 14.027397-70.136986 63.123288 14.027397 91.178082-77.150685-42.082192-84.164383 49.095891 14.027397-91.178083-70.136986-63.123287 91.178082-14.027398 49.09589-91.178082z m343.671233 196.383562l7.013699 21.041096 28.054794 7.013698-21.041095 14.027398 7.013698 28.054794-21.041096-14.027397-28.054794 14.027397 7.013698-28.054794-21.041095-14.027398 28.054794-7.013698 14.027397-21.041096zM547.068493 168.328767v28.054795l21.041096 14.027397-21.041096 14.027397-7.013698 21.041096-21.041096-21.041096H490.958904l21.041096-14.027397-14.027397-28.054795 28.054794 7.013699 21.041096-21.041096zM666.30137 280.547945l-14.027397 21.041096 7.013698 21.041096-21.041096-7.013699-21.041096 21.041096v-28.054794l-28.054794-14.027398 28.054794-7.013698 7.013699-28.054795 14.027397 21.041096h28.054795zM575.123288 540.054795l-21.041096 7.013698-7.013699 28.054795-21.041096-21.041096-28.054794 7.013698 14.027397-21.041095-14.027397-28.054795 28.054794 7.013699 21.041096-21.041096v28.054794l28.054795 14.027398z" fill="#FFFD43" p-id="6885"></path></svg></div>
+                <div class="text1">中国 &nbsp; | &nbsp; ZH</div>
+            </li>
+            <li>
+                <div class="gq"><svg t="1573033747944" class="icon" viewBox="0 0 1543 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6883" width="30" height="50"><path d="M77.150685 70.136986H1472.876712v883.726028H77.150685V70.136986z" fill="#FD0013" p-id="6884"></path><path d="M294.575342 203.39726l42.082192 84.164384 91.178082 14.027397-70.136986 63.123288 14.027397 91.178082-77.150685-42.082192-84.164383 49.095891 14.027397-91.178083-70.136986-63.123287 91.178082-14.027398 49.09589-91.178082z m343.671233 196.383562l7.013699 21.041096 28.054794 7.013698-21.041095 14.027398 7.013698 28.054794-21.041096-14.027397-28.054794 14.027397 7.013698-28.054794-21.041095-14.027398 28.054794-7.013698 14.027397-21.041096zM547.068493 168.328767v28.054795l21.041096 14.027397-21.041096 14.027397-7.013698 21.041096-21.041096-21.041096H490.958904l21.041096-14.027397-14.027397-28.054795 28.054794 7.013699 21.041096-21.041096zM666.30137 280.547945l-14.027397 21.041096 7.013698 21.041096-21.041096-7.013699-21.041096 21.041096v-28.054794l-28.054794-14.027398 28.054794-7.013698 7.013699-28.054795 14.027397 21.041096h28.054795zM575.123288 540.054795l-21.041096 7.013698-7.013699 28.054795-21.041096-21.041096-28.054794 7.013698 14.027397-21.041095-14.027397-28.054795 28.054794 7.013699 21.041096-21.041096v28.054794l28.054795 14.027398z" fill="#FFFD43" p-id="6885"></path></svg></div>
+                <div class="text1">中国 &nbsp; | &nbsp; ZH</div>
+            </li>
+            <li>
+                <div class="gq"><svg t="1573033747944" class="icon" viewBox="0 0 1543 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6883" width="30" height="50"><path d="M77.150685 70.136986H1472.876712v883.726028H77.150685V70.136986z" fill="#FD0013" p-id="6884"></path><path d="M294.575342 203.39726l42.082192 84.164384 91.178082 14.027397-70.136986 63.123288 14.027397 91.178082-77.150685-42.082192-84.164383 49.095891 14.027397-91.178083-70.136986-63.123287 91.178082-14.027398 49.09589-91.178082z m343.671233 196.383562l7.013699 21.041096 28.054794 7.013698-21.041095 14.027398 7.013698 28.054794-21.041096-14.027397-28.054794 14.027397 7.013698-28.054794-21.041095-14.027398 28.054794-7.013698 14.027397-21.041096zM547.068493 168.328767v28.054795l21.041096 14.027397-21.041096 14.027397-7.013698 21.041096-21.041096-21.041096H490.958904l21.041096-14.027397-14.027397-28.054795 28.054794 7.013699 21.041096-21.041096zM666.30137 280.547945l-14.027397 21.041096 7.013698 21.041096-21.041096-7.013699-21.041096 21.041096v-28.054794l-28.054794-14.027398 28.054794-7.013698 7.013699-28.054795 14.027397 21.041096h28.054795zM575.123288 540.054795l-21.041096 7.013698-7.013699 28.054795-21.041096-21.041096-28.054794 7.013698 14.027397-21.041095-14.027397-28.054795 28.054794 7.013699 21.041096-21.041096v28.054794l28.054795 14.027398z" fill="#FFFD43" p-id="6885"></path></svg></div>
+                <div class="text1">中国 &nbsp; | &nbsp; ZH</div>
+            </li>
+            <li>
+                <div class="gq"><svg t="1573033747944" class="icon" viewBox="0 0 1543 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6883" width="30" height="50"><path d="M77.150685 70.136986H1472.876712v883.726028H77.150685V70.136986z" fill="#FD0013" p-id="6884"></path><path d="M294.575342 203.39726l42.082192 84.164384 91.178082 14.027397-70.136986 63.123288 14.027397 91.178082-77.150685-42.082192-84.164383 49.095891 14.027397-91.178083-70.136986-63.123287 91.178082-14.027398 49.09589-91.178082z m343.671233 196.383562l7.013699 21.041096 28.054794 7.013698-21.041095 14.027398 7.013698 28.054794-21.041096-14.027397-28.054794 14.027397 7.013698-28.054794-21.041095-14.027398 28.054794-7.013698 14.027397-21.041096zM547.068493 168.328767v28.054795l21.041096 14.027397-21.041096 14.027397-7.013698 21.041096-21.041096-21.041096H490.958904l21.041096-14.027397-14.027397-28.054795 28.054794 7.013699 21.041096-21.041096zM666.30137 280.547945l-14.027397 21.041096 7.013698 21.041096-21.041096-7.013699-21.041096 21.041096v-28.054794l-28.054794-14.027398 28.054794-7.013698 7.013699-28.054795 14.027397 21.041096h28.054795zM575.123288 540.054795l-21.041096 7.013698-7.013699 28.054795-21.041096-21.041096-28.054794 7.013698 14.027397-21.041095-14.027397-28.054795 28.054794 7.013699 21.041096-21.041096v28.054794l28.054795 14.027398z" fill="#FFFD43" p-id="6885"></path></svg></div>
+                <div class="text1">中国 &nbsp; | &nbsp; ZH</div>
+            </li>
+            <li>
+                <div class="gq"><svg t="1573033747944" class="icon" viewBox="0 0 1543 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6883" width="30" height="50"><path d="M77.150685 70.136986H1472.876712v883.726028H77.150685V70.136986z" fill="#FD0013" p-id="6884"></path><path d="M294.575342 203.39726l42.082192 84.164384 91.178082 14.027397-70.136986 63.123288 14.027397 91.178082-77.150685-42.082192-84.164383 49.095891 14.027397-91.178083-70.136986-63.123287 91.178082-14.027398 49.09589-91.178082z m343.671233 196.383562l7.013699 21.041096 28.054794 7.013698-21.041095 14.027398 7.013698 28.054794-21.041096-14.027397-28.054794 14.027397 7.013698-28.054794-21.041095-14.027398 28.054794-7.013698 14.027397-21.041096zM547.068493 168.328767v28.054795l21.041096 14.027397-21.041096 14.027397-7.013698 21.041096-21.041096-21.041096H490.958904l21.041096-14.027397-14.027397-28.054795 28.054794 7.013699 21.041096-21.041096zM666.30137 280.547945l-14.027397 21.041096 7.013698 21.041096-21.041096-7.013699-21.041096 21.041096v-28.054794l-28.054794-14.027398 28.054794-7.013698 7.013699-28.054795 14.027397 21.041096h28.054795zM575.123288 540.054795l-21.041096 7.013698-7.013699 28.054795-21.041096-21.041096-28.054794 7.013698 14.027397-21.041095-14.027397-28.054795 28.054794 7.013699 21.041096-21.041096v28.054794l28.054795 14.027398z" fill="#FFFD43" p-id="6885"></path></svg></div>
+                <div class="text1">中国 &nbsp; | &nbsp; ZH</div>
+            </li>
+        </ul>
+        <div class="back-lang">
+            <svg t="1573036112221" class="icon" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="12041" width="50" height="50"><path d="M1022.0480000000001 498.01600000000013c2.016000000000001-3.9999999999999987 2.016000000000002-10.015999999999998 4.440892098500626e-15-16 4.440892098500626e-16-2.017-2.0159999999999982-4-3.999-6.016l-214.01599999999993-214.01600000000008c-7.9999999999999964-8.000000000000002-22.016-8-30.016999999999996-1.0658141036401503e-14s-8 22.016-1.0658141036401503e-14 30.016999999999996l178.01599999999996 178.01600000000005-930.017-2.8421709430404007e-13c-12-5.329070518200751e-15-22.016 7.999999999999996-22.016000000000005 19.99999999999999s10.015999999999995 22.016000000000005 22.01599999999999 22.016000000000002l930.017 2.8421709430404007e-13-178.01600000000005 175.99999999999994c-7.9990000000000006 10.015999999999996-8 22.016-8.881784197001252e-15 31.998999999999995 3.9999999999999982 4.000000000000001 10.014999999999997 6.016000000000004 15.999999999999998 6.016000000000005 3.9990000000000006 1.3322676295501878e-15 10.016000000000002-2.0159999999999965 14.015999999999998-6.015999999999997l214.01600000000008-214.01599999999993c2.0160000000000005-2.015999999999999 4.000000000000001-3.9999999999999982 4.000000000000001-7.998999999999997z" p-id="12042" fill="#ffffff"></path></svg>
+        </div>
+
+    </div>
+    <div class="language-cover">
+    </div>
+    <!--内容区-->
+    <div>
+      <ui-view>
+
+      </ui-view>
+    </div>
+
+    <footer class="global-footer " lang="en" id="MainFooter" data-module="GlobalFooter">
+        <section class="footer-main">
+            <div class="footer-top">
+                <div class="">
+                    <img src="./assets/image/logo1.png" alt="">
+                </div>
+
+
+                <div class="subscribe" id="EmailBlock">
+                    <img src="./assets/image/sanjiao.png" alt="">
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <ul class="utility-links">
+                    <li><a href="#/aboutUs"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">联系我们</font></font></a>
+                    </li>
+                    <li><a href="#/legalProvision"><font style="vertical-align: inherit;"><font
+                            style="vertical-align: inherit;">法律条款</font></font></a></li>
+                    <li><a href="#/PrivacyProtection"><font style="vertical-align: inherit;"><font
+                            style="vertical-align: inherit;">隐私保护</font></font></a></li>
+                    <li><a href="#/cookie"><font style="vertical-align: inherit;"><font
+                            style="vertical-align: inherit;">Cookie信息</font></font></a></li>
+                    <li><a href="#/disclaimer" title="无障碍声明"><font style="vertical-align: inherit;"><font
+                            style="vertical-align: inherit;">无障碍声明</font></font></a></li>
+                </ul>
+                <ul class="social-links" id="SocialLinksBlock">
+                    <li><a href="https://www.linkedin.com/company/mckinsey" class="mck-linkedin-icon" target="_blank"
+                           title="麦肯锡在LinkedIn上"><font style="vertical-align: inherit;"><font
+                            style="vertical-align: inherit;">领英</font></font></a></li>
+                    <li><a href="https://twitter.com/McKinsey" class="mck-twitter-icon" target="_blank"
+                           title="麦肯锡在推特上"><font style="vertical-align: inherit;"><font
+                            style="vertical-align: inherit;">推特</font></font></a></li>
+                    <li><a href="https://www.facebook.com/mckinsey" class="mck-facebook-icon" target="_blank"
+                           title="麦肯锡在Facebook上"><font style="vertical-align: inherit;"><font
+                            style="vertical-align: inherit;">脸书</font></font></a></li>
+                    <li><a href="https://www.youtube.com/mckinsey" class="mck-youtube-icon" target="_blank"
+                           title="麦肯锡YouTube频道"><font style="vertical-align: inherit;"><font
+                            style="vertical-align: inherit;">的YouTube</font></font></a></li>
+                    <li><a href="https://www.mckinsey.com/insights/rss.aspx" class="mck-rss-icon" target="_blank"
+                           title="麦肯锡RSS Feed"><font style="vertical-align: inherit;"><font
+                            style="vertical-align: inherit;">的RSS</font></font></a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="footer-inner">
+                <div class="app-description" id="AppDescriptionBlock">
+                    <strong><font style="vertical-align: inherit;"><font
+                            style="vertical-align: inherit;">Panotion</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -在您的iPhone，iPad或Android设备上获取最新的想法。
+                </font></font></div>
+                <div class="app-links" id="AppLinksBlock">
+                    <a href="https://itunes.apple.com/us/app/id674902075?mt=8" class="app-store" target="_blank">
+                        <img src="./assets/image/appleappstore.png" alt="在App Store上下载">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.mckinsey.mckinseyinsights"
+                       class="google-play" target="_blank">
+                        <img src="./assets/image/googleplaystore.png" alt="在Google Play上下载Android应用">
+                    </a>
+                </div>
+                <div class="copyright"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    ©1996-2019Panotion
+                </font></font></div>
+            </div>
+
+        </section>
+    </footer>
+<!--
+    <script src="../../libs/pantion/runtime.js"></script>
+-->
+    <script src="../../libs/pantion/shared.js"></script>
+    <script src="../../libs/pantion/app.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $('.toggle-login').click(function(){
+                $('.language').animate({right:'+=300px'});//
+                $('.language-cover').show();//
+                $('body').addClass('noscroll');
+                $('html').addClass('noscroll');
+            });
+            $('.back-lang').click(function(){
+                $('.language').animate({right:'-=300px'}); //
+                $('.language-cover').hide();//
+                $('body').removeClass('noscroll');
+                $('html').removeClass('noscroll');
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
