@@ -221,26 +221,39 @@
     <!--搜索栏-->
     <section class="top-bar11" ng-show="isMenu">
         <div class="search-nav">
-            <div class="model-select-box">
+            <div class="model-select-box sm-box1">
                 <div class="model-select-text" value=""> 行业</div>
                 <b class="bg1"></b>
-                <ul class="model-select-option">
+                <ul class="model-select-option" ng-click="smboxselect()">>
                     <li data-option="1" class="selected">行业</li>
                     <li data-option="2">能力</li>
                     <li data-option="3">洞察</li>
                 </ul>
+                <ul class="model-select-option1" ng-click="smboxselect1()">>
+                    <li data-option="1" class="selected"><span>防务及航天</span></li>
+                    <li data-option="2"><span>工程建筑</span></li>
+                    <li data-option="3"><span>金融服务</span></li>
+                    <li data-option="4"><span>食品行业服务体系</span></li>
+                    <li data-option="5"><span>政府及公共服务</span></li>
+                </ul>
             </div>
             <div class="line"></div>
-            <input class=" search-nav-input1" type="search" title="Search" placeholder="搜寻" value="" aria-live="polite">
-            <button class="search-nav-submit1" type="button" name="search" title="Search"><img src="./assets/image/searchnav.png" alt="">
+            <input ng-click="smallsearch()" class=" search-nav-input1" type="search" title="Search" placeholder="搜寻" value="" aria-live="polite">
+            <button class="search-nav-submit1 search-nav-submit1-s" type="button" name="search" title="Search"><img src="./assets/image/searchnav.png" alt="">
             </button>
         </div>
     </section>
     <section class="top-bar-pc"  ng-show="topbarpc">
         <div class="search-nav">
-            <select name="" id=" " class="search-nav-select" disabled="disabled">
-                <option  value="行业">行业</option>
-            </select>
+            <div class="model-select-box pc-box1">
+                <div class="model-select-text" value="" ng-click="pcboxselect()"> 行业</div>
+                <b class="bg1"></b>
+                <ul class="model-select-option" ng-click="offselect()">
+                    <li data-option="1" class="selected"><span>行业</span></li>
+                    <li data-option="2"><span>能力</span></li>
+                    <li data-option="3"><span>洞察</span></li>
+                </ul>
+            </div>
             <div class="line"></div>
             <input class=" search-nav-input1" type="search" title="Search" placeholder="搜寻" value="" aria-live="polite" ng-click="searchUl()">
             <button class="search-nav-submit1" type="button" name="search" title="Search"><img src="./assets/image/searchnav.png" alt=""></button>
@@ -248,11 +261,11 @@
         </div>
         <div class="show-ul" ng-click="offsearchUl()">
             <ul>
-                <li>防务航天</li>
-                <li>工程建筑</li>
-                <li>金融服务</li>
-                <li>食品行业</li>
-                <li>公共服务</li>
+                <li><span>防务航天</span></li>
+                <li><span>工程建筑</span></li>
+                <li><span>金融服务</span></li>
+                <li><span>食品行业</span></li>
+                <li><span>公共服务</span></li>
             </ul>
         </div>
     </section>
