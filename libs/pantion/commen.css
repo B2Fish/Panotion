@@ -3404,7 +3404,7 @@ body.ie:lang(ja) blockquote>p {
 
 @media screen and (min-width: 48em) {
   .nav-right {
-    margin-right:18px
+    margin-right:25px
   }
 }
 
@@ -4729,7 +4729,6 @@ ul.nav-list[aria-labelledby~='about-us-featured'] li.sub-nav-item a {
   }
 
   .navigation-r3 .hamburger-nav {
-    max-height: 724px;
     overflow-x: hidden;
     -webkit-transform: translateY(0);
     transform: translateY(0);
