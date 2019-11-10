@@ -53,7 +53,7 @@
                   </div>
 
                   <div class="section-wrapper">
-                        <div class="hero-with-partnership-mark section -bg-white text-left vertical-top  fp-auto-height-responsive"
+                        <div class="hero-with-partnership-mark section -bg-dark-blue-gradient text-left vertical-centered  fp-auto-height-responsive"
                               data-module="HeroWithPartnershipMark">
 
                               <div class="bg"
@@ -146,7 +146,7 @@
                                     </svg>
                               </div>
 
-                              <div class="section-content">
+                              <div class="section-content" ng-click='marketUrl()'>
 
                                     <div class="photo-render is-hidden-mobile"
                                           style="background-image: url('./assets/image/idx1.png');width: 50%;height: 100%;z-index: -1;position: absolute;;top: 0;">
@@ -265,7 +265,7 @@
                                     </svg>
                               </div>
 
-                              <div class="section-content">
+                              <div class="section-content" ng-click='abilityUrl()'>
                                     <a class="photo-render is-hidden-tablet"
                                           href="/about-us/social-responsibility/2018-report"></a>
 
@@ -387,7 +387,7 @@
                                     </svg>
                               </div>
 
-                              <div class="section-content">
+                              <div class="section-content" ng-click='insightUrl()'>
                                     <a class="photo-render is-hidden-tablet"
                                           href="/business-functions/organization/our-insights/the-helix-organization"></a>
 
@@ -450,7 +450,7 @@
 
 
 
-                        <div id="main_0_universal_2_divBlockList" class="block-list text-xl span-full-width">
+                        <div ng-click='recruitUrl()' id="main_0_universal_2_divBlockList" class="block-list text-xl span-full-width">
 
 
                               <div class="item -bg-lightest-grey two-up-left ">
@@ -498,7 +498,7 @@
             </div>
 
       </div>
-      <div class="home-markets-min">
+      <div class="home-markets-min" ng-click='officeUrl()'>
             <div class="text-mar-min-h">
                   <h1>我们该如何帮助你？</h1>
                   <p>取得 <a href="#/aboutUs">联系我们</a> 或者 <a href="#/office">找到办公室</a>离您最近</p>

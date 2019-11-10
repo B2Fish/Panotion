@@ -1,10 +1,11 @@
-<div class="pagination-menu global-header global-header-r3 navigation-r3   is-transparent -theme-dark" role="banner">
-    <div class="menu-toggle1"  aria-label="切换菜单" ng-click="menuClick()">
+<div class="pagination-menu global-header global-header-r3 navigation-r3   is-transparent -theme-dark " role="banner">
+    <div class="menu-toggle"  aria-label="切换菜单" ng-click="menuClick()">
         <span class="menu-hamburger"><span></span></span>
     </div>
     <div class="logo-container">
-        <a href="#/index" class="names  alone">
-            <img src="./assets/image/logo2.png" alt="" class="nav-logo-1">
+        <a href="#/index" class="names logo-icon alone">
+            <img src="./assets/image/logo1.png" alt="" class="nav-logo-1 nav-logo">
+            <img src="./assets/image/logo2.png" alt="" class="nav-logo-2 nav-logo">
         </a>
 
     </div>
@@ -12,8 +13,8 @@
         <ul>
 
             <li class="toggle-search" ng-click="togglesearch()" style="margin-right: 15px ">
-                <a href="javascript:;" class="" aria-label="切换搜索栏">
-                    <img src="./assets/image/sousuo-bai.png" alt="">
+                <a href="javascript:;" class="icon iconfont iconsousuo" aria-label="切换搜索栏">
+
                 </a>
 <!--
                 <a href="javascript:;" class="search-nav-button-close mobile mck-close-icon" aria-label="切换搜索栏"></a>
@@ -21,9 +22,9 @@
             </li>
 
             <li class="toggle-login has-children" ng-click="togglelaug()">
-                <a class="" href="javascript:;" aria-label="语言切换">
-                    <img src="./assets/image/map1.png" alt="">
-                    <span style="color: #ffffff">EN</span>
+                <a class="icon iconfont icondiqiu" href="javascript:;" aria-label="语言切换">
+                    <!-- <img src="./assets/image/map1.png" alt=""> -->
+                    <span>EN</span>
                 </a>
             </li>
 
@@ -224,12 +225,12 @@
             <div class="model-select-box sm-box1">
                 <div class="model-select-text" value=""> 行业</div>
                 <b class="bg1"></b>
-                <ul class="model-select-option" ng-click="smboxselect()">>
+                <ul class="model-select-option" ng-click="smboxselect()">
                     <li data-option="1" class="selected">行业</li>
                     <li data-option="2">能力</li>
                     <li data-option="3">洞察</li>
                 </ul>
-                <ul class="model-select-option1" ng-click="smboxselect1()">>
+                <ul class="model-select-option1" ng-click="smboxselect1()">
                     <li data-option="1" class="selected"><span>防务及航天</span></li>
                     <li data-option="2"><span>工程建筑</span></li>
                     <li data-option="3"><span>金融服务</span></li>
