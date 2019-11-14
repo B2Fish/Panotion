@@ -3,10 +3,14 @@
         <span class="menu-hamburger"><span></span></span>
     </div>
     <div class="logo-container">
-        <a href="#/index" class="names logo-icon alone">
+        <!-- <a href="#/index" ui-sref="index" ui-sref-opts="{reload:true}" class="names logo-icon alone">
             <img src="./assets/image/logo1.png" alt="" class="nav-logo-1 nav-logo">
             <img src="./assets/image/logo2.png" alt="" class="nav-logo-2 nav-logo">
-        </a>
+        </a> -->
+        <div ng-click='goIndex()' class="names logo-icon alone">
+            <img src="./assets/image/logo1.png" alt="" class="nav-logo-1 nav-logo">
+            <img src="./assets/image/logo2.png" alt="" class="nav-logo-2 nav-logo">
+        </div>
 
     </div>
     <div class="nav-right">
@@ -33,20 +37,20 @@
     </div>
     <!--菜单内容-->
     <section ng-show="isMenu" id="ctl20_ctl00_ctl00_hamburgerSection" class="hamburger-nav"   style="z-index: 99999">
-        <div ng-click="ismenuClick()" class="menu-toggle" aria-label="切换菜单" style="background: #ff0000">
+        <div ng-click="ismenuClick()" class="menu-toggle" aria-label="切换菜单" style="background: #E83820">
             <span class="menu-hamburger"><span></span></span>
         </div>
-        <div class="main-nav-inner" style="height: 649px;background: #ff0000">
-            <a href="#/index" class="mck-logo-icon-p" style="background: #ff0000;" id="isShow" >
+        <div class="main-nav-inner" style="height: 649px;background: #E83820">
+            <a href="#/index" class="mck-logo-icon-p" style="background: #E83820;" id="isShow" >
                 <img src="./assets/image/logo2.png" alt="" class="nav-logo-" >
             </a>
             <button type="button" class="search-nav-button mck-search-icon" aria-label="切换搜索栏">
             </button>
-            <nav class="main-nav" role="menu" style="background: #ff0000">
+            <nav class="main-nav" role="menu" style="background: #E83820">
 
                 <!--BEGIN GLOBAL HAMBURGER MENU NAVIGATION-->
 
-                <ul class="nav-list nav-group-left nav-list-nav-list" style="background: #ff0000;">
+                <ul class="nav-list nav-group-left nav-list-nav-list" style="background: #E83820;">
                     <li role="menuitem" aria-haspopup="true" ng-class="{'nav-item--active':selected==1}" ng-click="switchList(1);"
                         class="nav-item nav-link-item has-children " aria-expanded="false" aria-hidden="false">
                         <a class="p-a-l" href="javascript:;"><font style="vertical-align: inherit;" ><font style="vertical-align: inherit;">行业</font></font></a>
@@ -226,7 +230,7 @@
                 <div class="model-select-text" value=""> 行业</div>
                 <b class="bg1"></b>
                 <ul class="model-select-option" ng-click="smboxselect()">
-                    <li data-option="1" class="selected">行业</li>
+                    <li data-option="1">行业</li>
                     <li data-option="2">能力</li>
                     <li data-option="3">洞察</li>
                 </ul>
@@ -239,8 +243,8 @@
                 </ul>
             </div>
             <div class="line"></div>
-            <input ng-click="smallsearch()" class=" search-nav-input1" type="search" title="Search" placeholder="搜寻" value="" aria-live="polite">
-            <button class="search-nav-submit1 search-nav-submit1-s" type="button" name="search" title="Search"><img src="./assets/image/searchnav.png" alt="">
+            <input  class=" search-nav-input1" type="search" title="Search" placeholder="搜寻" value="" ng-model='allValue.searchValue'  aria-live="polite">
+            <button ng-click="smallsearch()" class="search-nav-submit1 search-nav-submit1-s" type="button" name="search" title="Search"><img src="./assets/image/searchnav.png" alt="">
             </button>
         </div>
     </section>
@@ -256,8 +260,8 @@
                 </ul>
             </div>
             <div class="line"></div>
-            <input class=" search-nav-input1" type="search" title="Search" placeholder="搜寻" value="" aria-live="polite" ng-click="searchUl()">
-            <button class="search-nav-submit1" type="button" name="search" title="Search"><img src="./assets/image/searchnav.png" alt=""></button>
+            <input class=" search-nav-input1" type="search" title="Search" placeholder="搜寻" value="" ng-model='allValue.searchValue' aria-live="polite">
+            <button class="search-nav-submit1" type="button" name="search" title="Search"  ng-click="searchUl()"><img src="./assets/image/searchnav.png" alt=""></button>
             <button class="search-nav-submit2" type="button" name="search" title="Search" ng-click="SearchClose()">X</button>
         </div>
         <div class="show-ul" ng-click="offsearchUl()">
@@ -276,10 +280,9 @@
             <input type="text" placeholder="搜寻">
         </div>
         <ul class="l-ul-">
-            <li>
+            <li class="chosed">
                 <div class="gq"><svg t="1573033747944" class="icon" viewBox="0 0 1543 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6883" width="30" height="50"><path d="M77.150685 70.136986H1472.876712v883.726028H77.150685V70.136986z" fill="#FD0013" p-id="6884"></path><path d="M294.575342 203.39726l42.082192 84.164384 91.178082 14.027397-70.136986 63.123288 14.027397 91.178082-77.150685-42.082192-84.164383 49.095891 14.027397-91.178083-70.136986-63.123287 91.178082-14.027398 49.09589-91.178082z m343.671233 196.383562l7.013699 21.041096 28.054794 7.013698-21.041095 14.027398 7.013698 28.054794-21.041096-14.027397-28.054794 14.027397 7.013698-28.054794-21.041095-14.027398 28.054794-7.013698 14.027397-21.041096zM547.068493 168.328767v28.054795l21.041096 14.027397-21.041096 14.027397-7.013698 21.041096-21.041096-21.041096H490.958904l21.041096-14.027397-14.027397-28.054795 28.054794 7.013699 21.041096-21.041096zM666.30137 280.547945l-14.027397 21.041096 7.013698 21.041096-21.041096-7.013699-21.041096 21.041096v-28.054794l-28.054794-14.027398 28.054794-7.013698 7.013699-28.054795 14.027397 21.041096h28.054795zM575.123288 540.054795l-21.041096 7.013698-7.013699 28.054795-21.041096-21.041096-28.054794 7.013698 14.027397-21.041095-14.027397-28.054795 28.054794 7.013699 21.041096-21.041096v28.054794l28.054795 14.027398z" fill="#FFFD43" p-id="6885"></path></svg></div>
                 <div class="text1">中国 &nbsp; | &nbsp; ZH</div>
-                <div class="ok_1"><svg t="1573034940641" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7990" width="20" height="50"><path d="M394.627879 722.199273l433.338182-433.353697a23.272727 23.272727 0 1 1 32.923151 32.907636L411.089455 771.568485a23.272727 23.272727 0 0 1-32.923152 0L147.781818 541.168485a23.272727 23.272727 0 1 1 32.907637-32.892121l213.938424 213.922909z" p-id="7991" fill="#ffffff"></path></svg></div>
             </li>
             <li>
                 <div class="gq"><svg t="1573033747944" class="icon" viewBox="0 0 1543 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6883" width="30" height="50"><path d="M77.150685 70.136986H1472.876712v883.726028H77.150685V70.136986z" fill="#FD0013" p-id="6884"></path><path d="M294.575342 203.39726l42.082192 84.164384 91.178082 14.027397-70.136986 63.123288 14.027397 91.178082-77.150685-42.082192-84.164383 49.095891 14.027397-91.178083-70.136986-63.123287 91.178082-14.027398 49.09589-91.178082z m343.671233 196.383562l7.013699 21.041096 28.054794 7.013698-21.041095 14.027398 7.013698 28.054794-21.041096-14.027397-28.054794 14.027397 7.013698-28.054794-21.041095-14.027398 28.054794-7.013698 14.027397-21.041096zM547.068493 168.328767v28.054795l21.041096 14.027397-21.041096 14.027397-7.013698 21.041096-21.041096-21.041096H490.958904l21.041096-14.027397-14.027397-28.054795 28.054794 7.013699 21.041096-21.041096zM666.30137 280.547945l-14.027397 21.041096 7.013698 21.041096-21.041096-7.013699-21.041096 21.041096v-28.054794l-28.054794-14.027398 28.054794-7.013698 7.013699-28.054795 14.027397 21.041096h28.054795zM575.123288 540.054795l-21.041096 7.013698-7.013699 28.054795-21.041096-21.041096-28.054794 7.013698 14.027397-21.041095-14.027397-28.054795 28.054794 7.013699 21.041096-21.041096v28.054794l28.054795 14.027398z" fill="#FFFD43" p-id="6885"></path></svg></div>
