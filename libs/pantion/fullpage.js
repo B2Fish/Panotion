@@ -89,14 +89,23 @@
           return e
         }
         function Z(e, t, n) {
+          if(!e || !t){
+            return
+          }
           for (var o = e[n]; o && !Te(o, t); )
             o = o[n];
           return o
         }
         function ee(e, t) {
+          if(!e || !t){
+            return
+          }
           return Z(e, t, "previousElementSibling")
         }
         function te(e, t) {
+          if(!e || !t){
+            return
+          }
           return Z(e, t, "nextElementSibling")
         }
         function ne(e) {
