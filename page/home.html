@@ -150,7 +150,7 @@
                               <div class="section-content" ng-click='marketUrl()'>
 
                                     <div class="photo-render is-hidden-mobile"
-                                          style="background-image: url('./assets/image/idx1.png');width: 50%;height: 100%;z-index: -1;position: absolute;;top: 0;">
+                                          style="background-image: url('{{indexList[0].background}}');width: 50%;height: 100%;z-index: -1;position: absolute;;top: 0;">
                                     </div>
                                     <div class="text-wrapper">
 
@@ -160,14 +160,13 @@
 
                                                 <h2 class="headline is-hidden-mobile">
                                                       <a href="#/marketIndex" style="display: block">
-                                                            INDUSTRIES
+                                                            {{indexList[0].pagetitle}}
                                                       </a>
                                                 </h2>
                                                 <p class="description">
-                                                      MUltidimensional
+                                                      {{indexList[0].pagedesc}}
                                                 </p>
-                                                <p class="description">comperhensive and professional</p>
-                                                <p class="description">Reply current and future business needs</p>
+                                                
                                           </div>
 
                                     </div>
@@ -267,11 +266,10 @@
                               </div>
 
                               <div class="section-content" ng-click='abilityUrl()'>
-                                    <a class="photo-render is-hidden-tablet"
-                                          href="/about-us/social-responsibility/2018-report"></a>
+                              
 
                                     <div class="photo-render is-hidden-mobile"
-                                          style="background-image: url('./assets/image/idx2.png');width: 50%;height: 100%;z-index: -1;position: absolute;;top: 0;">
+                                          style="background-image: url('{{indexList[1].background}}');width: 50%;height: 100%;z-index: -1;position: absolute;;top: 0;">
                                     </div>
                                     <div class="text-wrapper">
                                           <div class="text-render text-l text-ll text-render2">
@@ -279,14 +277,10 @@
                                                 </div>
                                                 <h2 class="headline is-hidden-mobile">
                                                       <a href="#/abilityIndex" style="display: block">
-                                                            CAPACCITIES
+                                                            {{indexList[1].pagetitle}}
                                                       </a>
                                                 </h2>
-                                                <p class="description"> Professional team,rich experience</p>
-                                                <p class="description"> nextwork all over the world</p>
-                                                <p class="description"> Worldwide leading perfessional service</p>
-                                                <p class="description"> institutions creates value for you</p>
-
+                                                <p class="description">{{indexList[1].pagedesc}}</p>
                                           </div>
                                     </div>
                               </div>
@@ -387,11 +381,9 @@
                               </div>
 
                               <div class="section-content" ng-click='insightUrl()'>
-                                    <a class="photo-render is-hidden-tablet"
-                                          href="/business-functions/organization/our-insights/the-helix-organization"></a>
-
+                                    
                                     <div class="photo-render is-hidden-mobile"
-                                          style="background-image: url('./assets/image/idx3.png');width: 50%;height: 100%;z-index: -1;position: absolute;;top: 0;left:0;">
+                                          style="background-image: url('{{indexList[2].background}}');width: 50%;height: 100%;z-index: -1;position: absolute;;top: 0;left:0;">
                                     </div>
                                     <div class="text-wrapper">
                                           <div class="text-render text-l">
@@ -400,13 +392,12 @@
 
                                                 <h2 class="headline is-hidden-mobile">
                                                       <a href="#/insightIndex" style="display: block">
-                                                            INSIGHT
+                                                            {{indexList[2].pagetitle}}
                                                       </a>
 
                                                 </h2>
                                                 <p class="description">
-                                                      Insight into industry changes forward-looking regional issues
-                                                      Provide a feasible solution with new ideas and perspectives
+                                                      {{indexList[2].pagedesc}}
                                                 </p>
 
                                           </div>
@@ -427,21 +418,21 @@
                         <style type="text/css">
                               @media (max-width: 767px) {
                                     .two-up-right.two-up-main_0_universal_2 {
-                                          background-image: url('./assets/image/jiaruwoemn.jpg');
+                                          background-image: url('{{indexList[3].background}}');
                                     }
 
                               }
 
                               @media (min-width: 768px) and (max-width: 1180px) {
                                     .two-up-right.two-up-main_0_universal_2 {
-                                          background-image: url('./assets/image/jiaruwoemn.jpg');
+                                          background-image: url('{{indexList[3].background}}');
                                     }
 
                               }
 
                               @media (min-width: 1181px) {
                                     .two-up-right.two-up-main_0_universal_2 {
-                                          background-image: url('./assets/image/jiaruwoemn.jpg');
+                                          background-image: url('{{indexList[3].background}}');
                                     }
 
                               }
@@ -459,13 +450,13 @@
                                                       class="eyebrow"></span>
                                                 <h3 class="headline">
                                                       <font style="vertical-align: inherit;">
-                                                            <font style="vertical-align: inherit;">加入我们</font>
+                                                            <font style="vertical-align: inherit;">{{indexList[3].pagetitle}}</font>
                                                       </font>
                                                 </h3>
                                                 <div id="main_0_universal_2_itemDescriptionYing" class="description">
                                                       <font style="vertical-align: inherit;">
                                                             <font style="vertical-align: inherit;">
-                                                                  来Panotion，与最好的团队一起做最好的工作，真正做到最好。</font>
+                                                                  {{indexList[3].pagedesc}}</font>
                                                       </font>
                                                 </div>
                                                 <div class="cta-container -align-vertical -align-vertical-11">
